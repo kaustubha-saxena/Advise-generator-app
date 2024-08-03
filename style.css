@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Manrope;
+}
+
+body {
+    background-color: var(--DarkBlue);
+}
+
+main {
+    width: 100vw;
+    height: 90vh;
+}
+
+.container {
+    background-color: var(--DarkGrayishBlue);
+    width: 450px;
+    position: fixed;
+    padding: 40px 30px 34px 30px;
+    border-radius: 25px;
+}
+
+.heading {
+    color: var(--NeonGreen);
+    text-align: center;
+    font-weight: 600;
+}
+
+.advise {
+    color: var(--LightCyan);
+    font-size: 28px;
+    text-align: center;
+    font-weight: 800;
+    margin: 25px 0px;
+}
+
+.border {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+.dice {
+    width: 60px;
+    height: 60px;
+    background-color: var(--NeonGreen);
+    border-radius: 40px;
+    position: absolute;
+    left: 225px;
+
+}
+
+.dice:hover {
+    box-shadow: var(--NeonGreen) 0px 0px 20px 4px;
+    cursor: pointer;
+}
+
+
+@media screen  and (max-width:767px){
+    .container{
+        width: 350px;
+    }
+    .dice{
+        left: 175px;
+    }
+}
+
+@media screen  and (max-width:375px){
+    .container{
+        width: 250px;
+    }
+    .dice{
+        left: 125px;
+    }
+}
